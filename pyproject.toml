@@ -1,0 +1,16 @@
+[project]
+name = "semantic-search-engine"
+version = "1.0.0"
+description = "Search real documents by meaning using embeddings and cosine similarity"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "scikit-learn", "joblib", "gradio", "matplotlib"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
